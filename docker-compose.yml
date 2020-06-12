@@ -1,0 +1,19 @@
+version: '3'
+services:
+    db:
+        image: mongo
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: root
+    api:
+        build:
+            dockerfile: Dockerfile
+            context: .
+        volumes: 
+            - /usr/src/app/node_modules
+            - ./api:/usr/src/app
+        ports: 
+            - 80:9000
+        depends_on:
+            - db
+    
