@@ -9,7 +9,7 @@
   "author": "Tarush Arora",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.409.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt-nodejs": "0.0.3",
     "fastify": "^1.13.2",
     "fastify-autoload": "^0.5.1",
